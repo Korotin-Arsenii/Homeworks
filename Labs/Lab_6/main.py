@@ -92,8 +92,9 @@ def main():
     residual_history.append(get_residual(x_k))
     error_history.append(get_error(x_k))
 
+
     # 5. Ітераційне уточнення до eps0 = 10^-14
-    eps0 = 1e-14
+    eps0 = 1e-13
     iterations = 0
 
     while residual_history[-1] > eps0 and iterations < 20:  # Обмеження для наочності графіка

@@ -17,7 +17,7 @@ def dF(x): return 2 * x + math.sin(x)
 
 def d2F(x): return 2 + math.cos(x)
 
-
+        
 # Критерій знаходження кореня (Пункт 3)
 def check_stop(x_new, x_old, eps):
     return abs(F(x_new)) < eps and abs(x_new - x_old) < eps
@@ -137,7 +137,7 @@ def point_5_6_setup_and_plot():
     print("\n--- Пункт 5: Графік збережено в 'polynomial_graph.png' ---")
     plt.show()
 
-    # Запис у файл [cite: 231]
+    # Запис у файл
     with open("poly_coeffs.txt", "w") as f:
         f.write(" ".join(map(str, coeffs)))
 
